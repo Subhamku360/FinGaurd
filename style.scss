@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    height: 50px;
+    background-color: #ff560c;
+    border-radius: 20px;
+}
+
+@font-face {
+    font-family: "open-sans";
+    src: url("./fonts/open-sans/OpenSans-Regular.ttf");
+}
+
+@import "header";
+
+@font-face {
+    font-family: "milker";
+    src: url("./fonts/milker/Milker.otf");
+}
+
+@import "hero";
+
+@font-face {
+    font-family: "ProdesStencil";
+    src: url("./fonts/prodes-stencil/ProdesStencil-Regular.otf");
+}
+
+
+@font-face {
+    font-family: "arimo";
+    src: url("./fonts/Arimo/Arimo-VariableFont_wght.ttf");
+}
+
+@import "aboutUS";
+
+@import "feature";
+
+marquee{
+            // position: absolute;
+            // top:20px;
+            height: 30%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color:#444444;
+            img{
+                height: 30px;
+                object-fit: contain;
+                width:auto;
+                margin: 40px;
+
+            }
+            .antigravity{
+                filter:invert(100%);
+            }
+            .coursera{
+               filter: invert(50%);
+               filter:contrast(0%);
+            }
+            // justify-content: center;
+        }
+
+@import "Benefits";

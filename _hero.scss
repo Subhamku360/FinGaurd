@@ -1,0 +1,134 @@
+.hero{
+    // position: abso/lute;
+    // z-index: 10;
+    height: 120%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    gap: 30px;
+
+    h1{
+        font-size: 120px;
+        font-weight: 500;
+        font-family: "milker";
+        color: white;
+        line-height: 1.1;
+    }
+
+    h1::selection{
+        color: #ff560c;
+    }
+
+    p{
+        font-size: 25px;
+        font-family: "open-sans";
+        color: white;
+    }
+    .button{
+        height: 50px;
+        display:flex;
+        // align-items: center;
+        gap: 10px;
+
+        button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ff560c;
+            color: white;
+            padding: 20px;
+            border-radius: 50px;
+            border:none;
+            font-weight: 800;
+            font-family: "open-sans";
+            font-size: 12px;
+        }
+
+
+    }
+    button:hover{
+        transition: all 0.1s ease-in-out;
+        background-color: #fff;
+        color: #ff560c;
+    }
+
+    .arrow:hover{
+        transition: all 0.2s ease-in-out;
+        rotate: 180deg;
+    }
+    .activeusers{
+
+        position: absolute;
+        bottom: 0;
+        height: 50px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // align-items: center      ;
+        // gap: 10px;
+
+        .upper{
+            height: 100%;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .circle{
+                height: 10px;
+                width: 10px;
+                background-color: #ff560c;
+                border-radius: 50%;
+            }
+            p{
+                font-size: 18px;
+            }
+
+        }
+        .bottom
+        {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+
+            p{
+                font-size: 40px;
+                font-weight: 700;
+                font-family: "milker";
+            }
+            p::selection{
+                color: #ff560c;
+            }
+
+            .img{
+                display: flex;
+                align-items: center;
+                // gap: 20px;
+            }
+
+            img{
+                height: 50px;
+                border-radius: 50%;
+                margin-left:-20px;
+            }
+            img:hover{
+                transition: all 0.5s ease-in-out;
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .video{
+        position: absolute;
+        bottom: -220px;
+        right: 100px;
+        z-index: 5;
+
+        video{
+            width: 800px;
+            height: 600px;
+        }
+    }
+}

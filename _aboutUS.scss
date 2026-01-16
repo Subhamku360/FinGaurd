@@ -1,0 +1,177 @@
+.about_us{
+    height: 100%;
+    width: 100%;
+    background-color:white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+
+    h3{
+        font-size: 30px;
+        font-weight: 300;
+        font-family: "open-sans";
+    }
+    .Get{
+        padding-left:0 ;
+        padding-right: 20px;
+        height: 20%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        h2{
+            font-size: 40px;
+            font-weight: 500;
+            font-family: "Milker";
+            letter-spacing: 2px;
+        }
+        p{
+            font-size: 20px;
+            font-weight: 300;
+            font-family: "open-sans";
+        }
+    }
+    .users{
+        height: 65%;
+        width: 100%;
+        // background-color: red;
+        display: flex;
+        gap: 20px;
+        // justify-content: ;
+        padding: 20px;
+
+        .userspercent{
+            height: 100%;
+            width: 50%;
+            background-color: #ff4b0c;
+            border-radius: 30px;
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            // gap: 10px;
+            justify-content: space-between;
+            // align-items: center;
+            // justify-content: start;
+
+            h1{
+                font-size: 150px;
+                color: white;
+                font-family:"ProdesStencil";
+                font-weight: 300;
+                position: relative;
+            }
+
+            h1::selection{
+                color: black;
+            }
+
+            h1::after{
+                position: absolute;
+                top: 10px;
+                font-size: 80px;
+                font-weight: 100;
+                // font-family: "open-sans";
+                content: "users";
+
+            }
+
+            h1::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-color: #ff4b0c;
+                z-index: -1;
+            }
+            p{
+                color: white;
+                font-family: "open-sans";
+                font-size: 15px;
+            }
+            p::selection{
+                color: black;
+            }
+
+        }
+
+        .trasction{
+            height: 100%;
+            width: 25%;
+            background-color: black;
+            border-radius: 30px;
+            // position: relative;
+            padding: 50px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 0 10px black;
+            h1{
+                font-size: 150px;
+                color: white;
+                font-family:"ProdesStencil";
+                font-weight: 300;
+                // position: relative;
+            }
+            h1::selection{
+                color: #ff4b0c;
+            }
+            p{
+                color: white;
+                font-family: "open-sans";
+                font-size: 15px;
+            }
+            p::selection{
+                color:#ff4b0c;
+            }
+
+        }
+        // .trasction:hover{
+        //     box-shadow: 5px 5px 10px white;
+        //     transition: all 0.5s ease-in-out;
+        // }
+        .network{
+            height: 100%;
+            width: 25%;
+            background-color: #ededed;
+            border-radius: 30px;
+            padding: 50px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+            h1{
+                font-size: 150px;
+                color: black;
+                font-family:"ProdesStencil";
+                font-weight: 200;
+                position: relative;
+            }
+            h1::after{
+                content: "K";
+                position: absolute;
+                top: 0;
+                left:150px;
+                font-size: 80px;
+                font-weight: 200;
+                font-family: "ProdesStencil";
+            }
+            p{
+                color: black;
+                font-family: "open-sans";
+                font-size: 15px;
+
+            }
+            p::selection{
+                color: #ff4b0c;
+            }
+        }
+        // .network:hover{
+        //     box-shadow: 5px 5px 10px black;
+        //     transition: all 0.5s ease-in-out;
+        // }
+    }
+}

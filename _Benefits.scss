@@ -1,0 +1,134 @@
+.Benefits{
+    height: 100%;
+    width: 100%;
+    background-color:black;
+    display: flex;
+
+    .left{
+        height: 100%;
+        width: 50%;
+        background:linear-gradient(to top ,#2e0008,black);
+        display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // position: relative;
+        video{
+            height: 100%;
+            width:100% ;
+            object-fit: contain;
+            // border: transparent;
+            // background-color: transparent;
+        }
+
+    }
+    .right{
+        height: 100%;
+        width: 50%;
+        background:linear-gradient(to top ,#2e0008,black);
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 20px;
+        justify-content: center;
+        gap: 20px;
+        // align-items: center;
+        h2{
+            font-size: 20px;
+            font-weight: 500;
+            font-family: "arimo";
+            letter-spacing: 2px;
+        }
+        h1{
+            font-size: 40px;
+            font-family: "Milker";
+            font-weight: 100;
+            letter-spacing: 2px;
+        }
+        h1::selection{
+            background-color: transparent;
+            color: #ff4b0c;
+        }
+        .box
+        {
+            height: 10%;
+            width: 100%;
+            // background-color: red;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .circle{
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                background-color:white;
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                i{
+                    color: black;
+                    font-size: 25px;
+                }
+                .ri-plane-fill{
+                    rotate: 90deg;
+                }
+            }
+            p{
+                font-size: 15px;
+                font-weight: 300;
+                font-family: "arimo";
+            }
+
+        }
+        .button{
+            height: 10%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            // justify-content: center;
+            gap: 20px;
+
+            button{
+                height: 50px;
+                width: 150px;
+                background-color: #ff4b0c;
+                border: none;
+                border-radius: 50px;
+                color: white;
+                font-size: 12px;
+                font-weight: 500;
+                font-family: "open-sans";
+                letter-spacing: 2px;
+            }
+            .arrow{
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                background-color:#ff4b0c;
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                i{
+                    color: white;
+                    font-size: 20px;
+                }
+            }
+            button:hover{
+                background-color: white;
+                color: #ff4b0c;
+                transition: all 0.5s ease-in-out;
+            }
+            .arrow:hover{
+                background-color: white;
+                color: #ff4b0c;
+                transition: all 0.5s ease-in-out;
+
+                i{
+                    color: #ff4b0c;
+                    rotate: 50deg;
+                    transition: all 0.5s ease-in-out;
+                }
+            }
+        }
+    }
+}

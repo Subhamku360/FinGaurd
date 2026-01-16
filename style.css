@@ -1,0 +1,644 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: #ff560c;
+  border-radius: 20px;
+}
+
+@font-face {
+  font-family: "open-sans";
+  src: url("./fonts/open-sans/OpenSans-Regular.ttf");
+}
+header {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+header .logo {
+  height: 100%;
+  width: 10%;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+header .logo img {
+  height: 20px;
+  width: 20px;
+}
+header .logo h2 {
+  color: white;
+  font-family: "open-sans";
+}
+header .nav {
+  height: 100%;
+  width: 80%;
+}
+header .nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+header .nav ul a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-family: "open-sans";
+}
+header .nav ul a:hover {
+  transition: all 0.1s ease-in-out;
+  color: #777;
+}
+header .signup {
+  height: 100%;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+header .signup button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-weight: 500;
+  font-family: "open-sans";
+}
+header .signup i {
+  color: white;
+}
+header .signup button:hover {
+  transition: all 0.1s ease-in-out;
+  color: #777;
+}
+
+@font-face {
+  font-family: "milker";
+  src: url("./fonts/milker/Milker.otf");
+}
+.hero {
+  height: 120%;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.hero h1 {
+  font-size: 120px;
+  font-weight: 500;
+  font-family: "milker";
+  color: white;
+  line-height: 1.1;
+}
+.hero h1::-moz-selection {
+  color: #ff560c;
+}
+.hero h1::selection {
+  color: #ff560c;
+}
+.hero p {
+  font-size: 25px;
+  font-family: "open-sans";
+  color: white;
+}
+.hero .button {
+  height: 50px;
+  display: flex;
+  gap: 10px;
+}
+.hero .button button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff560c;
+  color: white;
+  padding: 20px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 800;
+  font-family: "open-sans";
+  font-size: 12px;
+}
+.hero button:hover {
+  transition: all 0.1s ease-in-out;
+  background-color: #fff;
+  color: #ff560c;
+}
+.hero .arrow:hover {
+  transition: all 0.2s ease-in-out;
+  rotate: 180deg;
+}
+.hero .activeusers {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hero .activeusers .upper {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero .activeusers .upper .circle {
+  height: 10px;
+  width: 10px;
+  background-color: #ff560c;
+  border-radius: 50%;
+}
+.hero .activeusers .upper p {
+  font-size: 18px;
+}
+.hero .activeusers .bottom {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.hero .activeusers .bottom p {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "milker";
+}
+.hero .activeusers .bottom p::-moz-selection {
+  color: #ff560c;
+}
+.hero .activeusers .bottom p::selection {
+  color: #ff560c;
+}
+.hero .activeusers .bottom .img {
+  display: flex;
+  align-items: center;
+}
+.hero .activeusers .bottom img {
+  height: 50px;
+  border-radius: 50%;
+  margin-left: -20px;
+}
+.hero .activeusers .bottom img:hover {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.1);
+}
+.hero .video {
+  position: absolute;
+  bottom: -220px;
+  right: 100px;
+  z-index: 5;
+}
+.hero .video video {
+  width: 800px;
+  height: 600px;
+}
+
+@font-face {
+  font-family: "ProdesStencil";
+  src: url("./fonts/prodes-stencil/ProdesStencil-Regular.otf");
+}
+@font-face {
+  font-family: "arimo";
+  src: url("./fonts/Arimo/Arimo-VariableFont_wght.ttf");
+}
+.about_us {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.about_us h3 {
+  font-size: 30px;
+  font-weight: 300;
+  font-family: "open-sans";
+}
+.about_us .Get {
+  padding-left: 0;
+  padding-right: 20px;
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.about_us .Get h2 {
+  font-size: 40px;
+  font-weight: 500;
+  font-family: "Milker";
+  letter-spacing: 2px;
+}
+.about_us .Get p {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "open-sans";
+}
+.about_us .users {
+  height: 65%;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+.about_us .users .userspercent {
+  height: 100%;
+  width: 50%;
+  background-color: #ff4b0c;
+  border-radius: 30px;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about_us .users .userspercent h1 {
+  font-size: 150px;
+  color: white;
+  font-family: "ProdesStencil";
+  font-weight: 300;
+  position: relative;
+}
+.about_us .users .userspercent h1::-moz-selection {
+  color: black;
+}
+.about_us .users .userspercent h1::selection {
+  color: black;
+}
+.about_us .users .userspercent h1::after {
+  position: absolute;
+  top: 10px;
+  font-size: 80px;
+  font-weight: 100;
+  content: "users";
+}
+.about_us .users .userspercent h1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ff4b0c;
+  z-index: -1;
+}
+.about_us .users .userspercent p {
+  color: white;
+  font-family: "open-sans";
+  font-size: 15px;
+}
+.about_us .users .userspercent p::-moz-selection {
+  color: black;
+}
+.about_us .users .userspercent p::selection {
+  color: black;
+}
+.about_us .users .trasction {
+  height: 100%;
+  width: 25%;
+  background-color: black;
+  border-radius: 30px;
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 10px black;
+}
+.about_us .users .trasction h1 {
+  font-size: 150px;
+  color: white;
+  font-family: "ProdesStencil";
+  font-weight: 300;
+}
+.about_us .users .trasction h1::-moz-selection {
+  color: #ff4b0c;
+}
+.about_us .users .trasction h1::selection {
+  color: #ff4b0c;
+}
+.about_us .users .trasction p {
+  color: white;
+  font-family: "open-sans";
+  font-size: 15px;
+}
+.about_us .users .trasction p::-moz-selection {
+  color: #ff4b0c;
+}
+.about_us .users .trasction p::selection {
+  color: #ff4b0c;
+}
+.about_us .users .network {
+  height: 100%;
+  width: 25%;
+  background-color: #ededed;
+  border-radius: 30px;
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.about_us .users .network h1 {
+  font-size: 150px;
+  color: black;
+  font-family: "ProdesStencil";
+  font-weight: 200;
+  position: relative;
+}
+.about_us .users .network h1::after {
+  content: "K";
+  position: absolute;
+  top: 0;
+  left: 150px;
+  font-size: 80px;
+  font-weight: 200;
+  font-family: "ProdesStencil";
+}
+.about_us .users .network p {
+  color: black;
+  font-family: "open-sans";
+  font-size: 15px;
+}
+.about_us .users .network p::-moz-selection {
+  color: #ff4b0c;
+}
+.about_us .users .network p::selection {
+  color: #ff4b0c;
+}
+
+.feature {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+.feature .upper {
+  height: 6%;
+  width: 100%;
+  padding: 20px;
+}
+.feature .upper h1 {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "open-sans";
+  letter-spacing: 2px;
+}
+.feature .middle {
+  height: 20%;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.feature .middle .heading {
+  height: 100%;
+  width: 50%;
+}
+.feature .middle .heading h1 {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "Milker";
+  letter-spacing: 2px;
+}
+.feature .middle .heading h1::-moz-selection {
+  color: #ff4b0c;
+}
+.feature .middle .heading h1::selection {
+  color: #ff4b0c;
+}
+.feature .middle .paragraph {
+  height: 100%;
+  width: 50%;
+}
+.feature .middle .paragraph p {
+  font-size: 15px;
+  font-weight: 300;
+  font-family: "open-sans";
+}
+.feature .bottom {
+  height: 75%;
+  width: 100%;
+}
+.feature .bottom .boxs {
+  height: 20%;
+  width: 100%;
+  background-color: #ededed;
+  display: flex;
+  border-bottom: 1px solid black;
+}
+.feature .bottom .boxs .left {
+  height: 100%;
+  width: 50%;
+  align-items: center;
+  padding: 40px;
+  display: flex;
+  gap: 20px;
+}
+.feature .bottom .boxs .left h2 {
+  font-size: 25px;
+  font-family: "arimo";
+  line-height: 1;
+}
+.feature .bottom .boxs .right {
+  padding: 40px;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.feature .bottom .boxs .right .arrowbox {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feature .bottom .boxs .right .arrowbox i {
+  color: white;
+}
+.feature .bottom .boxs:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+.feature .bottom .boxs:hover .arrowbox {
+  background-color: #ff4b0c;
+}
+.feature .bottom .boxs:hover .arrowbox i {
+  color: white;
+  transform: rotate(320deg);
+  transition: all 0.5s ease-in-out;
+}
+.feature .bottom .slider {
+  height: 20%;
+  width: 100%;
+  background-color: #333;
+}
+
+marquee {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #444444;
+}
+marquee img {
+  height: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: auto;
+  margin: 40px;
+}
+marquee .antigravity {
+  filter: invert(100%);
+}
+marquee .coursera {
+  filter: invert(50%);
+  filter: contrast(0%);
+}
+
+.Benefits {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+}
+.Benefits .left {
+  height: 100%;
+  width: 50%;
+  background: linear-gradient(to top, #2e0008, black);
+  display: flex;
+}
+.Benefits .left video {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.Benefits .right {
+  height: 100%;
+  width: 50%;
+  background: linear-gradient(to top, #2e0008, black);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 20px;
+  justify-content: center;
+  gap: 20px;
+}
+.Benefits .right h2 {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "arimo";
+  letter-spacing: 2px;
+}
+.Benefits .right h1 {
+  font-size: 40px;
+  font-family: "Milker";
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+.Benefits .right h1::-moz-selection {
+  background-color: transparent;
+  color: #ff4b0c;
+}
+.Benefits .right h1::selection {
+  background-color: transparent;
+  color: #ff4b0c;
+}
+.Benefits .right .box {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.Benefits .right .box .circle {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Benefits .right .box .circle i {
+  color: black;
+  font-size: 25px;
+}
+.Benefits .right .box .circle .ri-plane-fill {
+  rotate: 90deg;
+}
+.Benefits .right .box p {
+  font-size: 15px;
+  font-weight: 300;
+  font-family: "arimo";
+}
+.Benefits .right .button {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.Benefits .right .button button {
+  height: 50px;
+  width: 150px;
+  background-color: #ff4b0c;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "open-sans";
+  letter-spacing: 2px;
+}
+.Benefits .right .button .arrow {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #ff4b0c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Benefits .right .button .arrow i {
+  color: white;
+  font-size: 20px;
+}
+.Benefits .right .button button:hover {
+  background-color: white;
+  color: #ff4b0c;
+  transition: all 0.5s ease-in-out;
+}
+.Benefits .right .button .arrow:hover {
+  background-color: white;
+  color: #ff4b0c;
+  transition: all 0.5s ease-in-out;
+}
+.Benefits .right .button .arrow:hover i {
+  color: #ff4b0c;
+  rotate: 50deg;
+  transition: all 0.5s ease-in-out;
+}/*# sourceMappingURL=style.css.map */
