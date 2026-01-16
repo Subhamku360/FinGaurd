@@ -6,7 +6,7 @@ This project is built using **HTML** and **SCSS**, focusing on clean UI, smooth 
 ---
 
 ## 🚀 Live Preview
-🔗 https://your-live-link-here.com
+🔗 [https://your-live-link-here.com](https://fin-gaurd.vercel.app/)
 *(Deploy using GitHub Pages / Netlify / Vercel)*
 
 ---
